@@ -6,7 +6,7 @@ use Yuga\Providers\ServiceProvider;
 use Yuga\Interfaces\Application\Application;
 use Yuga\Providers\Shared\MakesCommandsTrait;
 
-class DatatablesServiceProvider extends ServiceProvider
+class DataTablesServiceProvider extends ServiceProvider
 {
     use MakesCommandsTrait;
 
