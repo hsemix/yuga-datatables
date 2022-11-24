@@ -1,0 +1,38 @@
+{
+    "name": "yuga/datatables",
+    "description": "Integrate dataTables with your Yuga Application.",
+    "keywords": ["framework", "Yuga", "DataTables", "PHP Yuga DataTables"],
+    "license": "MIT",
+    "homepage": "https://yuga-framework.gitbook.io/documentation/datatables",
+    "authors": [
+        {
+            "name": "Hamidouh Semix",
+            "email": "semix.hamidouh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.1",
+        "psy/psysh": "^0.10.4|^0.11.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5|^8.0",
+        "yuga/framework": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yuga\\DataTables\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "yuga": {
+            "providers": [
+                "Yuga\\DataTables\\Providers\\DataTablesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
