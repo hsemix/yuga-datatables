@@ -1,6 +1,6 @@
 <?php
 
-namespace Yuga\Repl\Providers;
+namespace Yuga\DataTables\Providers;
 
 use Yuga\Providers\ServiceProvider;
 use Yuga\Interfaces\Application\Application;
