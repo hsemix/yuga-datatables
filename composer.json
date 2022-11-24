@@ -1,6 +1,6 @@
 {
     "name": "yuga/datatables",
-    "description": "Integrate dataTables with your Yuga Application.",
+    "description": "Integrate dataTables in your Yuga Application.",
     "keywords": ["framework", "Yuga", "DataTables", "PHP Yuga DataTables"],
     "license": "MIT",
     "homepage": "https://yuga-framework.gitbook.io/documentation/datatables",
