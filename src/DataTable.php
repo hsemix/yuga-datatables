@@ -10,7 +10,7 @@ use Yuga\DataTables\Factory;
 use InvalidArgumentException;
 use Yuga\Database\Elegant\Model;
 use Yuga\Database\Query\Builder;
-// use Yuga\Database\Elegant\Builder;
+use Yuga\Database\Elegant\Builder as EBuilder;
 
 class DataTable
 {
@@ -161,7 +161,7 @@ class DataTable
      */
     public function make($query, Request $request = null)
     {
-        if ($query instanceof Model) {
+        if ($query instanceof Model || $query instanceof EBuilder) {
             $queryBuilder = $query->getQuery();
 
             if (is_null($queryBuilder->columns)) {
