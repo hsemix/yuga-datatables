@@ -21,7 +21,7 @@ class DataTablesServiceProvider extends ServiceProvider
      */
     public function load(Application $app)
     {
-        $this->app->singleton(DataTable::class, function () use ($app) {
+        $this->app->make(DataTable::class, function () use ($app) {
             return new DataTable(new Factory(request()));
         });
     }
